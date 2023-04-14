@@ -3,6 +3,7 @@ import { Client, Collection } from 'discord.js';
 import dotenv from 'dotenv';
 import fs from 'fs-extra';
 import Intents from './constants/discord/intents.js';
+import Logger from './utils/logger.js';
 
 dotenv.config();
 
@@ -24,6 +25,10 @@ eventFiles.forEach(async file => {
   let eventClass = new event(client);
 
   client.on(eventName, eventClass.run.bind());
+});
+
+process.on('unhandledRejection', err => {
+  Logger.error(err);
 });
 
 client.login(process.env.CLIENT_TOKEN);
