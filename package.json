@@ -9,7 +9,7 @@
     "src"
   ],
   "scripts": {
-    "postinstall": "husk install",
+    "prepare": "is-ci || husky install",
     "serve": "nodemon --config nodemon.json ./src/index.js",
     "format": "prettier --write . && eslint src --fix",
     "lint": "prettier --check . && eslint src"
@@ -40,6 +40,7 @@
     "@playerberry/eslint-config": "^1.0.0",
     "conventional-changelog-cli": "^2.2.2",
     "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.7"
   },
