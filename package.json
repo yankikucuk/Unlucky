@@ -9,6 +9,7 @@
     "src"
   ],
   "scripts": {
+    "postinstall": "husk install",
     "serve": "nodemon --config nodemon.json ./src/index.js",
     "format": "prettier --write . && eslint src --fix",
     "lint": "prettier --check . && eslint src"
