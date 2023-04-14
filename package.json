@@ -1,0 +1,38 @@
+{
+  "name": "streamers",
+  "version": "0.0.1",
+  "description": "Streamers sunucusu için geliştirilen müthiş efsane discord botu.",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "serve": "",
+    "format": "prettier --write . && eslint src --fix",
+    "lint": "prettier --check . && eslint src"
+  },
+  "keywords": [
+    "discord",
+    "discordjs",
+    "discrod-js",
+    "bot",
+    "unluckuy",
+    "streamers",
+    "twitch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yankikucuk/Unlucky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yankikucuk/Unlucky/issues"
+  },
+  "author": "Yankı Küçük <yankikucuk@playerberry.com> (https://playerberry.com)",
+  "contributors": [
+    "Yankı Küçük <kendinikertenkelebek@me.com>",
+    "Yahya Eren Gönültaş <yahyaeren95@gmail.com>"
+  ],
+  "license": "Apache-2.0"
+}
